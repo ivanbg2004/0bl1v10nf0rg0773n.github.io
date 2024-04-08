@@ -45,6 +45,7 @@ header h1 {
 
 table {
     width: 100%;
+    margin-top: 20px;
     border-collapse: collapse;
     background-color: #333;
     border-radius: 10px;
@@ -52,7 +53,7 @@ table {
 
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #555;
 }
 
@@ -71,6 +72,7 @@ tr:hover {
 
 footer {
     text-align: center;
+    bottom: 0;
     padding: 20px;
     background-color: #333;
 }
