@@ -4,12 +4,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
 }
 
 header {
     background-color: #333;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -72,7 +78,9 @@ tr:hover {
 
 footer {
     text-align: center;
-    bottom: 0;
     padding: 20px;
     background-color: #333;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
 }
