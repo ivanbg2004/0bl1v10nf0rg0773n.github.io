@@ -10,6 +10,42 @@
     <div class="console-container">
         <h2>Welcome to the Developer Console</h2>
         <p>This is a restricted area for authorized users only.</p>
+
+        <!-- Form to add a new player -->
+        <form id="addPlayerForm">
+            <h3>Add New Player:</h3>
+            <input type="text" id="newName" placeholder="Name" required>
+            <input type="text" id="newIP" placeholder="IP">
+            <input type="text" id="newTOP" placeholder="TOP">
+            <input type="text" id="newRush" placeholder="Rush">
+            <input type="text" id="newMT" placeholder="MT">
+            <input type="text" id="newDF" placeholder="DF">
+            <button type="button" onclick="addNewPlayer()">Add Player</button>
+        </form>
+
+        <!-- Form to remove a player -->
+        <form id="removePlayerForm">
+            <h3>Remove Player:</h3>
+            <input type="text" id="playerToRemove" placeholder="Player Name" required>
+            <button type="button" onclick="removeExistingPlayer()">Remove Player</button>
+        </form>
+
+        <!-- Form to edit a player's information -->
+        <form id="editPlayerForm">
+            <h3>Edit Player Information:</h3>
+            <input type="text" id="playerToEdit" placeholder="Player Name" required>
+            <select id="editField">
+                <option value="Name">Name</option>
+                <option value="IP">IP</option>
+                <option value="TOP">TOP</option>
+                <option value="Rush">Rush</option>
+                <option value="MT">MT</option>
+                <option value="DF">DF</option>
+            </select>
+            <input type="text" id="editValue" placeholder="New Value" required>
+            <button type="button" onclick="editPlayerInfo()">Edit Information</button>
+        </form>
+
         <button onclick="logout()">Logout</button>
     </div>
 
